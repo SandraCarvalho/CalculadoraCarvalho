@@ -93,6 +93,7 @@
             this.btnFactorial.TabIndex = 13;
             this.btnFactorial.Text = "A!";
             this.btnFactorial.UseVisualStyleBackColor = true;
+            this.btnFactorial.Click += new System.EventHandler(this.btnFactorial_Click);
             // 
             // btnMultiplicar
             // 
@@ -103,6 +104,7 @@
             this.btnMultiplicar.TabIndex = 12;
             this.btnMultiplicar.Text = "A * B";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // btnSubtrair
             // 
@@ -113,6 +115,7 @@
             this.btnSubtrair.TabIndex = 11;
             this.btnSubtrair.Text = "A - B";
             this.btnSubtrair.UseVisualStyleBackColor = true;
+            this.btnSubtrair.Click += new System.EventHandler(this.btnSubtrair_Click);
             // 
             // btnSomar
             // 
@@ -123,6 +126,7 @@
             this.btnSomar.TabIndex = 10;
             this.btnSomar.Text = "A + B";
             this.btnSomar.UseVisualStyleBackColor = true;
+            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
             // 
             // textBoxNumeroB
             // 
