@@ -23,8 +23,8 @@ namespace CalculadoraCarvalho
             long numeroA;
             long numeroB;
             long resultado;
-            numeroA = long.Parse(textBoxNumeroA.Text);
-            numeroB = long.Parse(textBoxNumeroB.Text);
+            long.TryParse(textBoxNumeroA.Text, out numeroA);
+            long.TryParse(textBoxNumeroB.Text, out numeroB);
             resultado = numeroA + numeroB;
 
             textBoxResultado.Text = resultado.ToString();
@@ -35,8 +35,8 @@ namespace CalculadoraCarvalho
             long numeroA;
             long numeroB;
             long resultado;
-            numeroA = long.Parse(textBoxNumeroA.Text);
-            numeroB = long.Parse(textBoxNumeroB.Text);
+            long.TryParse(textBoxNumeroA.Text, out numeroA);
+            long.TryParse(textBoxNumeroB.Text, out numeroB);
             resultado = numeroA - numeroB;
             textBoxResultado.Text = resultado.ToString();
         }
@@ -46,8 +46,8 @@ namespace CalculadoraCarvalho
             long numeroA;
             long numeroB;
             long resultado;
-            numeroA = long.Parse(textBoxNumeroA.Text);
-            numeroB = long.Parse(textBoxNumeroB.Text);
+            long.TryParse(textBoxNumeroA.Text, out numeroA);
+            long.TryParse(textBoxNumeroB.Text, out numeroB);
             resultado = numeroA * numeroB;
 
             textBoxResultado.Text = resultado.ToString();
@@ -59,7 +59,7 @@ namespace CalculadoraCarvalho
             long counter;
             BigInteger resultado = 1;
 
-            numeroA = long.Parse(textBoxNumeroA.Text);
+            long.TryParse(textBoxNumeroA.Text, out numeroA);
 
             if (numeroA >= 1)
 
